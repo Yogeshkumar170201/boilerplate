@@ -9,7 +9,7 @@ const root = ReactDOM.createRoot(
 );
 
 root.render(
-  <MoralisProvider appId="xxxxxxxx" serverUrl="xxxxxxxx">
+  <MoralisProvider appId={process.env.REACT_APP_APP_ID} serverUrl={process.env.REACT_APP_SERVER_URL}>
     <App />
   </MoralisProvider>
 );
